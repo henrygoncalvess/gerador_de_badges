@@ -18,6 +18,10 @@ body{
     height: 100vh;
 }
 
+div{
+    margin: 5px 0px;
+}
+
 div#logo{
     text-align: center;
     margin-bottom: 15px;
@@ -25,4 +29,16 @@ div#logo{
 
 img#logoBadge{
     border: 1px solid black;
+}
+
+a#linkBadges{
+    
+}
+
+div#msg_logo{
+    
+}
+
+input.conteudo{
+    width: 80px;
 }
