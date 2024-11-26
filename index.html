@@ -10,23 +10,43 @@
 
 <body>
   <section>
-    <div id="logo">
-      <img height="30px" src="https://img.shields.io/badge/Gerador_de-ffffff?style=flat-square">
-      <img id="logoBadge" height=30px" src="https://img.shields.io/badge/GitHub-Badges-ffffff?style=flat-square&logo=github&logoColor=white&labelColor=black">
+    <div id="logoTitle">
+      <img class="logoTitle" src="https://img.shields.io/badge/Gerador_de-ffffff?style=flat-square">
+      <img class="logoBadge" src="https://img.shields.io/badge/GitHub-Badges-ffffff?style=flat-square&logo=github&logoColor=white&labelColor=black">
     </div>
-    
-    <div>
-      <a id="linkBadges" href="https://simpleicons.org/">ver todas as badges disponíveis</a>
+
+    <div id="divLinkBadges">
+      <a id="linkBadges" href="https://simpleicons.org/">VER TODAS AS BADGES DISPONÍVEIS</a>
     </div>
-    
-    <div id="msg_logo">
-      <input class="conteudo" type="text" placeholder="msg1 node">
-      <input class="conteudo" type="text" placeholder="msg2 1.1.1">
-      <input class="conteudo" type="text" placeholder="logo node.js">
+
+    <div class="msg">
+      <div class="msgText">
+        <span class="msgTextLogo">logo</span>
+        <span class="msgTextMsg1">1ª mensagem</span>
+        <span class="msgTextMsg2">2ª mensagem</span>
+      </div>
+
+      <div class="inputs">
+        <input class="logo" type="text" placeholder="gnubash" value="gnubash">
+        <input class="msg1" type="text" placeholder="bash" value="bash">
+        <input class="msg2" type="text" placeholder="1.1.1" value="1.1.1">
+      </div>
     </div>
-    
-    <div id="cores">hexadecimal - cor da logo / cor <-- / cor --></div>
-    
+
+    <div class="msg">
+      <div class="colorText">
+        <span class="msgTextLogo">cor da logo</span>
+        <span id="colorMsg1" class="msgTextMsg1">cor da 1ª mensagem</span>
+        <span id="colorMsg2" class="msgTextMsg2">cor da 2ª mensagem</span>
+      </div>
+
+      <div class="colorInputs">
+        <input class="logo" type="text" placeholder="white" value="white">
+        <input class="msg1" type="text" placeholder="gray" value="gray">
+        <input class="msg2" type="text" placeholder="4EAA25" value="4EAA25">
+      </div>
+    </div>
+
     <div id="estilo">
       estilo da badge <br>
       <select>
@@ -34,14 +54,16 @@
         <option>flat-square</option>
       </select>
     </div>
-    
+
+    <button>Gerar bagde</button>
+
     <div id="exemploBadge">
-      <img height="35px" src="https://img.shields.io/badge/node.js-1.1.1-5FA04E?style=for-the-badge&logo=node.js">
+      <img height="45px" width="250px" src="https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white">
     </div>
-    
+
     <div id="linkAplicacaoBadge">link (html e markdown)</div>
   </section>
-    
+
   <script src="script.js"></script>
 </body>
 
