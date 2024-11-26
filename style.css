@@ -12,33 +12,126 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     width: 100vw;
     height: 100vh;
+    margin-top: 10px;
 }
 
-div{
+section{
+    text-align: center;
+}
+
+section > div{
     margin: 5px 0px;
 }
 
-div#logo{
+div#logoTitle{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
 }
 
-img#logoBadge{
+img.logoTitle{
+    height: 50px;
+}
+
+img.logoBadge{
+    height: 50px;
     border: 1px solid black;
 }
 
+div#divLinkBadges{
+    margin-bottom: 25px;
+}
+
 a#linkBadges{
-    
+    font-size: 0.9em;
+    color: blue;
 }
 
-div#msg_logo{
-    
+div.msg{
+    width: 320px;
+    margin: 0px auto 30px auto;
 }
 
-input.conteudo{
-    width: 80px;
+div.msgText{
+    display: flex;
+}
+
+span.msgTextLogo,
+span.msgTextMsg1,
+span.msgTextMsg2{
+    font-size: 0.9em;
+    color: gray;
+    text-align: center;
+}
+
+div.msgText > span.msgTextMsg1::after{
+    content: "*";
+    color: red;
+}
+
+span.msgTextLogo{
+    flex: 0 1 90px;
+}
+
+span.msgTextMsg1,
+span.msgTextMsg2{
+    flex: 1 1 auto;
+}
+
+div.inputs{
+    display: flex;
+}
+
+input.logo{
+    width: 90px;
+    font-size: 1em;
+    text-align: center;
+}
+
+input.msg1,
+input.msg2{
+    flex: 0 1 auto;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+
+div.colorText{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+span.msgTextMsg1,
+span.msgTextMsg2{
+    flex: 1 1 50px;
+}
+
+div.colorInputs{
+    display: flex;
+}
+
+div#estilo{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+select{
+    width: 140px;
+    font-size: 1em;
+    text-align: center;
+    height: 20px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 0px;
+    padding: 5px;
 }
