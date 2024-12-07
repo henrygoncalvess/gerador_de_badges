@@ -135,6 +135,8 @@ button{
 
 img#badge{
     width: 50%;
+    border: 10px solid transparent;
+    background-color: #efefef;
 }
 
 div#linkAplicacaoBadge{
