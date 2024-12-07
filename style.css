@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
@@ -33,11 +34,11 @@ div#logoTitle{
 }
 
 img.logoTitle{
-    height: 50px;
+    height: 60px;
 }
 
 img.logoBadge{
-    height: 50px;
+    height: 60px;
     border: 1px solid black;
 }
 
@@ -51,12 +52,16 @@ a#linkBadges{
 }
 
 div.msg{
-    width: 320px;
+    width: 360px;
     margin: 0px auto 30px auto;
 }
 
-div.msgText{
+div.msgText,
+div.colorText{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: end;
 }
 
 span.msgTextLogo,
@@ -65,6 +70,8 @@ span.msgTextMsg2{
     font-size: 0.9em;
     color: gray;
     text-align: center;
+    flex: 0 1 118px;
+    margin: 0px 1px 5px 1px;
 }
 
 div.msgText > span.msgTextMsg1::after{
@@ -72,38 +79,24 @@ div.msgText > span.msgTextMsg1::after{
     color: red;
 }
 
-span.msgTextLogo{
-    flex: 0 1 90px;
-}
-
-span.msgTextMsg1,
-span.msgTextMsg2{
-    flex: 1 1 auto;
-}
-
 div.inputs{
     display: flex;
-}
-
-input.logo{
-    width: 90px;
-    font-size: 1em;
+    width: 100%;
     text-align: center;
 }
 
+input{
+    border: 1px solid black;
+    padding: 2px;
+    margin: 0px 1px;
+}
+
+input.logo,
 input.msg1,
 input.msg2{
-    flex: 0 1 auto;
+    flex: 1 1 auto;
     width: 100%;
-    font-size: 1em;
     text-align: center;
-}
-
-div.colorText{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: end;
 }
 
 span.msgTextMsg1,
@@ -128,10 +121,12 @@ select{
 }
 
 button{
+    cursor: pointer;
     background-color: black;
     color: white;
     font-size: 1.1em;
     border: none;
-    border-radius: 0px;
+    border-radius: 5px;
     padding: 5px;
+    margin-bottom: 10px;
 }
