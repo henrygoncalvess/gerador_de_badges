@@ -52,8 +52,6 @@ document.querySelector('button').addEventListener('click', () => {
         
         const badgeString = `https://img.shields.io/badge/${Object.values(informacoes).join('')}`
     
-        console.log(informacoes);
-    
         document.querySelector('#badge').setAttribute('src', badgeString)
     
         fetch(badgeString).then(res => {
