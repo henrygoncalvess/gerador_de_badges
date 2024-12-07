@@ -133,6 +133,10 @@ button{
     margin-bottom: 10px;
 }
 
+img#badge{
+    width: 50%;
+}
+
 div#linkAplicacaoBadge{
     margin-top: 20px;
     color: gray;

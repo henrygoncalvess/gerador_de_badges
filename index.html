@@ -27,9 +27,9 @@
       </div>
 
       <div class="inputs">
-        <input class="logo" type="text" placeholder="gnubash" maxlength="20">
-        <input class="msg1" type="text" placeholder="bash" maxlength="20">
-        <input class="msg2" type="text" placeholder="1.1.1" maxlength="20">
+        <input class="logo" type="text" placeholder="gnubash" autocomplete="on">
+        <input class="msg1" type="text" placeholder="bash" autocomplete="on">
+        <input class="msg2" type="text" placeholder="1.1.1" autocomplete="on">
       </div>
     </div>
 
@@ -41,16 +41,16 @@
       </div>
 
       <div class="colorInputs">
-        <input class="logo" type="text" placeholder="ffffff" maxlength="20">
-        <input class="msg1" type="text" placeholder="gray" maxlength="20">
-        <input class="msg2" type="text" placeholder="4EAA25" maxlength="20">
+        <input class="logo" type="text" placeholder="white" autocomplete="on">
+        <input class="msg1" type="text" placeholder="gray" autocomplete="on">
+        <input class="msg2" type="text" placeholder="4EAA25" autocomplete="on">
       </div>
     </div>
 
     <div id="estilo">
       estilo da badge <br>
       <select>
-        <option>for-the-badge</option>
+        <option selected>for-the-badge</option>
         <option>flat-square</option>
         <option>flat</option>
         <option>social</option>
@@ -61,15 +61,15 @@
     <button>Gerar bagde</button>
 
     <div id="exemploBadge">
-      <img width="250px" src="https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=ffffff">
+      <img id="badge" src="https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=gray">
     </div>
 
     <div id="linkAplicacaoBadge">
       link - HTML <br>
-      <textarea id="linkHTML" rows="3" cols="60" readonly>https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=ffffff</textarea> <br>
+      <textarea id="linkHTML" rows="3" cols="60" readonly>https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=gray</textarea> <br>
 
       link - MARKDOWN <br>
-      <textarea id="linkMARKDOWN" rows="3" cols="60" readonly>![Static Badge](https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=ffffff)</textarea>
+      <textarea id="linkMARKDOWN" rows="3" cols="60" readonly>![Static Badge](https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=gray)</textarea>
     </div>
   </section>
 
