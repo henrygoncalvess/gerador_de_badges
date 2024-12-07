@@ -27,9 +27,9 @@
       </div>
 
       <div class="inputs">
-        <input class="logo" type="text" placeholder="gnubash">
-        <input class="msg1" type="text" placeholder="bash">
-        <input class="msg2" type="text" placeholder="1.1.1">
+        <input class="logo" type="text" placeholder="gnubash" maxlength="18">
+        <input class="msg1" type="text" placeholder="bash" maxlength="18">
+        <input class="msg2" type="text" placeholder="1.1.1" maxlength="18">
       </div>
     </div>
 
@@ -41,9 +41,9 @@
       </div>
 
       <div class="colorInputs">
-        <input class="logo" type="text" placeholder="ffffff">
-        <input class="msg1" type="text" placeholder="gray">
-        <input class="msg2" type="text" placeholder="4EAA25">
+        <input class="logo" type="text" placeholder="ffffff" maxlength="18">
+        <input class="msg1" type="text" placeholder="gray" maxlength="18">
+        <input class="msg2" type="text" placeholder="4EAA25" maxlength="18">
       </div>
     </div>
 
@@ -52,6 +52,9 @@
       <select>
         <option>for-the-badge</option>
         <option>flat-square</option>
+        <option>flat</option>
+        <option>social</option>
+        <option>plastic</option>
       </select>
     </div>
 
@@ -61,7 +64,13 @@
       <img width="250px" src="https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=ffffff">
     </div>
 
-    <div id="linkAplicacaoBadge">link (html e markdown)</div>
+    <div id="linkAplicacaoBadge">
+      link - HTML <br>
+      <textarea id="linkHTML" rows="3" cols="60" readonly>https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=ffffff</textarea> <br>
+
+      link - MARKDOWN <br>
+      <textarea id="linkMARKDOWN" rows="3" cols="60" readonly>https://img.shields.io/badge/bash-1.1.1-4EAA25?style=for-the-badge&logo=gnubash&logoColor=ffffff</textarea>
+    </div>
   </section>
 
   <script src="script.js"></script>
